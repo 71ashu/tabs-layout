@@ -1,0 +1,34 @@
+/* Add application styles & imports to this file! */
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+.tap-pane {
+  font-size: 14px;
+  padding: 5px 40px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.tap-pane:hover,
+.tap-pane.active {
+  color: blue;
+}
+
+.tap-pane:hover::after {
+  background-color: blue;
+  opacity: 0.3;
+}
+
+.tap-pane::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: transparent;
+  width: 100%;
+  bottom: -2px;
+  left: 0px;
+  transition: inherit;
+}

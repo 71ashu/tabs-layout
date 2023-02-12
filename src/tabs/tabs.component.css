@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  border-bottom: 2px solid lightgrey;
+  position: relative;
+}
+
+.tab-highlighter {
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  background-color: blue;
+  transition: 0.3s;
+}
