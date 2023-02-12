@@ -18,10 +18,19 @@ import { routes } from './routes/routes';
       <div appTabPane routerLink="/page-3" routerLinkActive="active">Tab 3</div>
     </app-tabs>
     <router-outlet />
+
+    <app-tabs>
+      <div appTabPane [class.active]="tab === 'tab1'" (click)="tab = 'tab1'">Tab 1</div>
+      <div appTabPane [class.active]="tab === 'tab2'" (click)="tab = 'tab2'">Tab 2</div>
+    </app-tabs>
   `,
 })
 export class App {
   name = 'Angular';
+
+  tab = 'tab1';
+
+  
 }
 
 bootstrapApplication(App, {

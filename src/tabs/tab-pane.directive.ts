@@ -12,7 +12,6 @@ import { TabsComponent } from './tabs.component';
   selector: '[appTabPane]',
 })
 export class TabPaneDirective implements AfterViewInit {
-  @HostBinding('class.active') activeTab: boolean;
   @HostBinding('class.tap-pane') tapPane = true;
 
   constructor(
